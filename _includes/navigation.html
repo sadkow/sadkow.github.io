@@ -1,0 +1,7 @@
+<nav>
+  <ul>
+    {%- for link in site.data.menu.top_menu -%}
+      <li><a href="{{ link.url }}">{{ link.title | capitalize }}</a></li>
+    {%- endfor -%}
+  </ul>
+</nav>
