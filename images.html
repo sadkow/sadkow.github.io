@@ -1,0 +1,21 @@
+---
+layout: default
+title: Images
+---
+
+<h1>Images</h1>
+
+<h2>Pirates</h2>
+
+<hr>
+
+<p>Pirate army theme by Scott</p>
+
+{%- for image in site.data.pirate_images -%}
+<div style="float: left; width: 50%;"> 
+  <figure>
+    <img src="/images/{{ image.url }}" alt="{{ image.title }}" style="max-width: 100%;">
+    <figcaption>{{ image.title }}</figcaption>
+  </figure>
+</div>
+{%- endfor -%}
